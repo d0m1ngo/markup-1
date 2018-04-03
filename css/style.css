@@ -1,0 +1,668 @@
+@font-face {
+    font-family: 'Yeseva One';
+    src: url("../assets/fonts/yeseva-one/YesevaOne-Regular_v2.otf") format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Gentium Basic';
+    src: url("../assets/fonts/Gentium-Basic/GenBkBasB.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lato Regular';
+    src: url("../assets/fonts/lato/Lato-Regular.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'OpenSans';
+    src: url("../assets/fonts/open-sans/OpenSans-Regular.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'OpenSans bold';
+    src: url("../assets/fonts/open-sans/OpenSans-Bold.ttf") format('truetype');
+  }
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 1600px;
+    min-height: calc(100vh - 320px) ;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../assets/images/Bg-1.png);
+    height: 750px;
+}
+.header {
+    height: 110px;
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items:center;
+    height: 110px;
+    font-family: 'Gentium Basic', serif;
+    
+    
+}
+.navigation li:first-child {
+    margin-right: auto;
+}
+.navigation a {
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+.nav-text {
+    margin: 20px;
+}
+.icons {
+    margin: 8px;
+}
+.icon {
+      color:#dab33e;
+}
+.caption {
+    width:970px;
+    height: 640px;
+    margin: 0 auto;
+    
+}
+.caption-text {
+    font-size: 65px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Yeseva One",sans-serif;
+    }
+    .caption-main {
+        position: relative
+    }
+    .caption-main::after {
+        content: url(../assets/images/Decoration-1.png);
+        position: absolute;
+        left: 38%;
+        
+    }
+    .caption-button {
+        display: flex;
+        justify-content: center;
+        padding-top: 110px;
+        font-family: "Lato Regular",sans-serif;
+       
+    }
+    .bookTheTable {
+        width: 230px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-style: none;
+        color: #ffffff;
+        font-size: 14px;
+        margin: 10px;
+        cursor: pointer;
+        border: 1px solid black;
+    }
+    .bookTheTable:hover {
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.2);
+       
+        cursor: pointer;
+    }
+    .seeTheMenu {
+        width: 230px;
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-style: none;
+        color: #ffffff;
+        font-size: 14px;
+        margin: 10px;
+        cursor: pointer;
+        border: 1px solid white;
+    }
+.seeTheMenu:hover {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.about {
+    background-image: url(../assets/images/pattern-1.png);
+    height: 710px;
+}
+.about-content {
+    width: 1070px;
+    margin: 0 auto;
+}
+
+.JustFood {
+    color: #cc9900;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Yeseva One',sans-serif;
+    
+}
+.JustFood::after {
+    content: url(../assets/images/Divider-2.png);
+
+    position: relative;
+    top: 20px;
+   
+ 
+}
+.about-text {
+    padding-top: 20px;
+    font-family: 'Lato Regular',sans-serif;
+    line-height: 24px;
+    letter-spacing: 0.09px;
+    overflow: hidden;
+    text-align: center;
+}
+.cook {
+    margin-top: 49px;
+    margin-left: 30%;
+}
+
+.about-left {
+    width: 430px;
+    float: left;
+    margin-top: 100px;
+}
+.about-right {
+    float: right;
+    margin-top: 5%;
+
+}
+.ingridients {
+    background-image: url(../assets/images/bg-2.png);
+    height: 758px;
+}
+.fineIngredients {
+    width: 1400px;
+}
+.fineIngredientsText {
+    float: right;
+    width: 570px;
+    height: 560px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 7.5%;
+    margin-left: 10%;
+    font-family: 'Lato Regular',sans-serif;
+}
+.h2IngText {
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    padding-top: 40px;
+    font-family: 'Yeseva One',sans-serif;
+}
+.h2IngText::after {
+    content: url(../assets/images/Divider-3.png)
+}
+.pIngText {
+    width: 430px;
+    margin: 0 auto;
+    color: #ffffff;
+    padding-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    word-spacing: 0.6px;
+    letter-spacing: -0.3px;
+    overflow: hidden;
+ 
+}
+.imgicon {
+    margin: 15px;
+}
+.imageIcons {
+    margin-left: 10%;
+}
+.menu {
+    background-image: url(../assets/images/pattern-2.png);
+    height: 1200px;
+    width: 1600px;
+}
+ .inner-container-menu{
+    
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 1000px;
+
+  }
+  
+  .menu h3{
+    text-align: center;
+    color: #cc9900;
+    font-family: 'Yeseva One',sans-serif;
+    font-size: 36.5px;
+    letter-spacing: -0.2px;
+  }
+  
+  .menu h3::after{
+    display: block;
+    content: url("../assets/images/Divider-2.png");
+    margin-top: 12px;
+    position: relative;
+    top: -1px;
+    left: -1px;
+  } 
+  
+  .menu-column{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 2px;
+  }
+  
+  .menu-column:nth-child(n+2){
+    margin-left: 146px;
+  }
+  
+  
+  .menu-column:first-child{
+    position: relative;
+  }
+  
+  .plate{
+    margin-top: 23px;
+  }
+  
+  .plate-name{
+    word-spacing: 2px;
+    width: 432px;
+    display: flex;
+    justify-content: space-between;
+    color: #c89f2d;
+    font-family: 'Yeseva One',sans-serif;
+    font-size: 21px;
+    border-bottom: 1px solid rgba(200, 159, 45, 0.2);
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+  }
+  
+  .plate-name + div{
+    margin-top: -2px;
+    font-family: 'Lato Regular',sans-serif;
+    font-size: 16px;
+    word-spacing: -1.9px;
+    letter-spacing: 0.2px;
+  }
+  
+   
+  .menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-item:first-child .plate:nth-child(n+3){
+    margin-top: 39px;
+  }
+  
+  .menu-item:nth-child(n+2) {
+    margin-top: 67.5px;
+  }
+  
+  .menu-column:last-child .special-wrapper{
+    margin-top: -16px;
+  }
+  
+  .menu-column:last-child .menu-item:last-child .plate:nth-child(4){
+    margin-top: 26px;
+  }
+  
+  .menu-column:last-child .menu-item:last-child .plate:nth-child(5){
+    margin-top: 40px;
+  }
+  
+  .menu-column:first-child .menu-item:nth-child(2) .special-wrapper{
+    margin-top: -15px;
+  }
+  
+  .menu-column:first-child .menu-item:last-child>.plate:last-child .plate-name{
+    margin-top: 4px;
+  }
+  
+  .special{
+    border: 1px solid rgba(200, 159, 45, 0.4);
+    padding: 9px 10px 11px 10px;
+  }
+  
+  .special-wrapper::before{
+    position: relative;
+    left: 385px;
+    bottom: -24px;
+    display: inline-block;
+    width: 69px;
+    height: 19px;
+    padding-top: 3px;
+    text-align: center;
+    content: 'Special';
+    background: url(../images/menu-bg-special.png) 100% 100%;
+    color: white;
+    font-family: 'Lato Regular',serif;
+    font-size: 14px;
+  }
+  
+
+
+
+
+
+
+.reviews {
+    background-image: url(../assets/images/bg-3.png);
+    height: 758px;
+}
+.fineReviews {
+    width: 1250px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.fineReviewsText {
+    padding-top: 40px;
+    margin: 50px auto;
+    width: 774px;
+    height: 557px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.fineReviewsText blockquote {
+  font-size: 25px;
+  font-family: 'Gentium Basic', serif;
+  text-align: center;
+  line-height: 40px;
+  color: rgb(194,196,195);
+  margin-top: -2px;
+  height: 220px;
+  overflow: hidden;
+}
+.fineReviewsText cite {
+    font-family: 'Lato Regular',serif;
+    color: #ffffff;
+    position: relative;
+    bottom: -30px;
+    left: 300px;
+    font-size: 16px;
+    text-align: center;
+   
+}
+.h2RevText {
+    padding-top: 50px ;
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
+    margin: 0;
+    font-family: 'Yeseva One',sans-serif;
+   
+
+}
+.h2RevText::after {
+    content: url(../assets/images/Divider-3.png);
+    display: block;
+}
+
+.pText {
+    padding-top: 20px;
+    width: 630px;
+    margin: 0 auto;
+    color: #ffffff;
+    padding-bottom: 20px;
+ 
+}
+.background {
+    background-image: url(../assets/images/pattern-1.png);
+    height: 710px;
+}
+.reservations {
+    position: relative;
+    width: 100%;
+    height: 710px;
+}
+
+.reservations div {
+    position: absolute;
+    top: 84px;
+    left: 175px;
+    height: 507px;
+}
+.reservations div img {
+    margin-right: 26px;
+}
+
+.reservations form {
+    position: absolute;
+    top: 96px;
+    left: 892px;
+    width: 415px;
+    height: 507px;
+
+}
+
+.reservations form h3 {
+    color: rgb(204, 153, 0);
+    text-align: center;
+    margin: 0;
+    font-size: 36.5px;
+    font-family: 'Yeseva One',sans-serif;
+}
+
+.reservations form h3::after {
+    position: relative;
+    top: 5px;
+    left: -1px;
+    content: url("../assets/images/Divider-2.png");
+}
+
+.reservations form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reservations form p + p {
+    margin-top: -6px;
+}
+
+.reservations form label {
+    
+    font-family: 'OpenSans', serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(204, 153, 0);
+}
+
+.reservations form input, .reservations form select {
+    width: 180px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px rgb(200, 200, 200) solid;
+    font-style: italic;
+    font-family: 'OpenSans', serif;
+    
+    font-size: 16px;
+    padding-left: 15px;
+}
+.reservations form p {
+    font-family: 'Lato Regular',sans-serif;
+    font-size: 16px;
+}
+
+.form-name {
+    position: absolute;
+    top: 296px;
+    left: -6px;
+}
+
+.form-email {
+    position: absolute;
+    top: 296px;
+    left: 220px;
+}
+
+.form-date {
+    position: absolute;
+    top: 381px;
+    left: -5px;
+}
+
+.form-party {
+    position: absolute;
+    top: 381px;
+    left: 220px;
+}
+
+.reservations form .name {
+    position: absolute;
+    top: 320px;
+    left: -5px;
+}
+
+.reservations form .email {
+    position: absolute;
+    top: 323px;
+    left: 223px;
+    width: 183px;
+}
+
+.reservations form .date {
+    position: absolute;
+    top: 406px;
+    left: -7px;
+    width: 183px;
+    height: 34px;
+    background-image: url('../assets/images/icon.png');
+    background-repeat: no-repeat;
+    background-position: 176px center;
+}
+
+
+
+
+
+
+.reservations form .party-number {
+    position: absolute;
+    top: 406px;
+    left: 223px;
+    width: 200px;
+    height: 36px;
+    padding-left: 14px;
+    background-image: url('../assets/images/icon-2.png');
+    background-position: 176px center;
+    background-repeat: no-repeat;
+}
+
+ 
+
+
+
+.reservations form button {
+    position: absolute;
+    top: 475px;
+    left: 109px;
+    width: 200px;
+    height: 36px;
+    background-color: rgb(201, 161, 49);
+    border-width: 0px;
+    font: normal 17px "OpenSans";
+
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    height: 320px;
+    width: 1600px;
+    background-color: #191919;
+    margin: 0 auto;
+}
+footer {
+    position: relative;
+    background-color: rgb(25, 25, 25);
+    color: rgb(255, 255, 255);
+    margin: auto;
+    width: 1600px;
+    height: 320px;
+    text-align: center;
+}
+
+footer .about-us {
+    position: absolute;
+    top: 29px;
+    left: 212px;
+    height: 200px;
+    width: 375px;
+}
+
+footer .about-us h4:after {
+    position: relative;
+    top: 16px;
+    content: url("../assets/images/footer-divider.png");
+}
+
+footer .hours {
+    position: absolute;
+    top: 29px;
+    left: 691px;
+    height: 200px;
+    width: 220px;
+}
+
+footer .hours h4:after {
+    position: relative;
+    top: 16px;
+    left: -1px;
+    content: url("../assets/images/footer-divider.png");
+}
+
+footer p {
+    position: relative;
+    top: 1px;
+    font-family: 'OpenSans',sans-serif;
+    word-spacing: -1px;
+    line-height: 1.45;
+}
+
+footer .location p {
+    letter-spacing: 0px;
+}
+
+footer .location {
+    position: absolute;
+    top: 29px;
+    left: 1091px;
+    height: 200px;
+    width: 220px;
+}
+
+footer .location h4:after {
+    position: relative;
+    top: 16px;
+    left: -1px;
+    content: url("../assets/images/footer-divider.png");
+}
+
+footer .payment a {
+    position: relative;
+    top: 34px;
+    left: 3px;
+    color: rgb(255, 255, 255);
+    padding: 0px 4px;
+}
+
+footer .social a {
+    position: relative;
+    top: 34px;
+    left: 4px;
+    color: rgb(255, 255, 255);
+    padding: 0px 4px;
+}
